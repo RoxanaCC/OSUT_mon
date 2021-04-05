@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60B4AC"
+    tools:context=".CreateUserActivity">
+
+    <EditText
+        android:id="@+id/editpassadm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editemailadm"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <EditText
+        android:id="@+id/editnameadm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="Nume"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpassadm"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <EditText
+        android:id="@+id/editfacadm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="Facultate"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editnameadm"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <EditText
+        android:id="@+id/editanadm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="An"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editfacadm"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <Button
+        android:id="@+id/confbutadn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/cumvrei"
+        android:backgroundTint="#048492"
+        android:text="Confirmă"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editanadm"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <Button
+        android:id="@+id/backbadd"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/cumvrei"
+        android:backgroundTint="#0360A8"
+        android:text="Înapoi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editanadm"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <EditText
+        android:id="@+id/editemailadm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <TextView
+        android:id="@+id/textViewaddadm"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/editemailadm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <Button
+        android:id="@+id/imageadd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#C8DAD8"
+        android:text="Poză"
+        app:layout_constraintBottom_toTopOf="@+id/editemailadm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewaddadm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleimagevew"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageadd"
+        app:layout_constraintEnd_toEndOf="@+id/imageadd"
+        app:layout_constraintStart_toStartOf="@+id/imageadd"
+        app:layout_constraintTop_toTopOf="@+id/imageadd" />
+</androidx.constraintlayout.widget.ConstraintLayout>

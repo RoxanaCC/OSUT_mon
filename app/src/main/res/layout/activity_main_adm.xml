@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8492DF"
+    tools:context=".ProfileActivity">
+
+    <Button
+        android:id="@+id/profiladm"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="#FFFFFF"
+        android:text="Profil"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/addadm"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="#FFFFFF"
+        android:text="Adăugare cont"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profiladm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/usersadm"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="#FFFFFF"
+        android:text="Utilizatori"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addadm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/logoutadm"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:backgroundTint="#FFFFFF"
+        android:text="Logout"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usersadm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="344dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cometablue" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="287dp"
+        android:layout_height="209dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.711"
+        app:srcCompat="@drawable/osutscris" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addadm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coladmin" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/usersadm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coladmin" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logoutadm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/collogout" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profiladm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/colprofil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

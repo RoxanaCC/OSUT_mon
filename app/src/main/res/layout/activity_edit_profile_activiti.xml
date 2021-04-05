@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6AD6CB"
+    tools:context=".EditProfileActivity">
+
+    <Button
+        android:id="@+id/profiledirimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circle"
+        android:text="Poză"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <TextView
+        android:id="@+id/textVieweditprf"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/profiledirimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backbaddeprf"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/cumvrei"
+        android:backgroundTint="#0360A8"
+        android:text="Înapoi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpassprf2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/confbuteprf"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/cumvrei"
+        android:backgroundTint="#048492"
+        android:text="Confirmă"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpassprf2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editpassprf2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="New password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpassprf1"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <EditText
+        android:id="@+id/editpassprf1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="Old password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editanprf"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/editanprf"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="An"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editfacprf"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <EditText
+        android:id="@+id/editfacprf"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="Facultate"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editnameprf"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/editnameprf"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textvrem"
+        android:ems="10"
+        android:hint="Nume"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profiledirimage"
+        app:layout_constraintVertical_bias="0.055" />
+</androidx.constraintlayout.widget.ConstraintLayout>
